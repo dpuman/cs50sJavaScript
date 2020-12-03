@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background color</title>
+    <style>
+        #contant{
+            display: block;
+            width: 70%;
+            margin: auto;
+            margin-top: 200px;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        
+
+
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            document.querySelector('#orange').onclick=function(){
+                document.querySelector('body').style.background='Orange';
+                document.querySelector('h1').style.color='White';
+            }
+            document.querySelector('#yellow').onclick=function(){
+                document.querySelector('body').style.background='Yellow';
+                document.querySelector('h1').style.color='black';
+            }
+            document.querySelector('#gray').onclick=function(){
+                document.querySelector('body').style.background='Gray';
+                document.querySelector('h1').style.color='White';
+            }
+            document.querySelector('#Green').onclick=function(){
+                document.querySelector('body').style.background='#20B2AA';
+                document.querySelector('h1').style.color='White';
+            }
+
+        })
+    </script>
+
+
+</head>
+<body>
+    <div id="contant">
+        <h1>Change background color by clicking the buttons</h1>
+        <button id="orange">Orange</button>
+        <button id="yellow">Yellow</button>
+        <button id="gray">Gray</button>
+        <button id="Green">Green</button>
+        
+    </div>
+</body>
+</html>
